@@ -1,0 +1,999 @@
+Performing C SOURCE FILE Test HAVE_GCC_PREFERRED_STACK_BOUNDARY failed with the following output:
+Change Dir: /home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_3c802/fast"
+/usr/bin/make -f CMakeFiles/cmTC_3c802.dir/build.make CMakeFiles/cmTC_3c802.dir/build
+make[1] : on entre dans le répertoire « /home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp »
+Building C object CMakeFiles/cmTC_3c802.dir/src.c.o
+/usr/bin/cc    -g -O3 -DHAVE_GCC_PREFERRED_STACK_BOUNDARY -mpreferred-stack-boundary=2   -o CMakeFiles/cmTC_3c802.dir/src.c.o   -c /home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp/src.c
+/home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp/src.c:1:0: error: -mpreferred-stack-boundary=2 is not between 4 and 12
+ int x = 0; int main(int argc, char **argv) {}
+ ^
+CMakeFiles/cmTC_3c802.dir/build.make:65 : la recette pour la cible « CMakeFiles/cmTC_3c802.dir/src.c.o » a échouée
+make[1]: *** [CMakeFiles/cmTC_3c802.dir/src.c.o] Erreur 1
+make[1] : on quitte le répertoire « /home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp »
+Makefile:126 : la recette pour la cible « cmTC_3c802/fast » a échouée
+make: *** [cmTC_3c802/fast] Erreur 2
+
+Source file was:
+int x = 0; int main(int argc, char **argv) {}
+Performing C SOURCE FILE Test HAVE_ALTIVEC_H_HDR failed with the following output:
+Change Dir: /home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_fd256/fast"
+/usr/bin/make -f CMakeFiles/cmTC_fd256.dir/build.make CMakeFiles/cmTC_fd256.dir/build
+make[1] : on entre dans le répertoire « /home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp »
+Building C object CMakeFiles/cmTC_fd256.dir/src.c.o
+/usr/bin/cc    -g -O3 -DHAVE_ALTIVEC_H_HDR -maltivec   -o CMakeFiles/cmTC_fd256.dir/src.c.o   -c /home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp/src.c
+cc: error: unrecognized command line option ‘-maltivec’
+CMakeFiles/cmTC_fd256.dir/build.make:65 : la recette pour la cible « CMakeFiles/cmTC_fd256.dir/src.c.o » a échouée
+make[1]: *** [CMakeFiles/cmTC_fd256.dir/src.c.o] Erreur 1
+make[1] : on quitte le répertoire « /home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp »
+Makefile:126 : la recette pour la cible « cmTC_fd256/fast » a échouée
+make: *** [cmTC_fd256/fast] Erreur 2
+
+Source file was:
+
+          #include <altivec.h>
+          vector unsigned int vzero() {
+              return vec_splat_u32(0);
+          }
+          int main(int argc, char **argv) { }
+Performing C SOURCE FILE Test HAVE_ALTIVEC failed with the following output:
+Change Dir: /home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_fa89d/fast"
+/usr/bin/make -f CMakeFiles/cmTC_fa89d.dir/build.make CMakeFiles/cmTC_fa89d.dir/build
+make[1] : on entre dans le répertoire « /home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp »
+Building C object CMakeFiles/cmTC_fa89d.dir/src.c.o
+/usr/bin/cc    -g -O3 -DHAVE_ALTIVEC -maltivec   -o CMakeFiles/cmTC_fa89d.dir/src.c.o   -c /home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp/src.c
+cc: error: unrecognized command line option ‘-maltivec’
+CMakeFiles/cmTC_fa89d.dir/build.make:65 : la recette pour la cible « CMakeFiles/cmTC_fa89d.dir/src.c.o » a échouée
+make[1]: *** [CMakeFiles/cmTC_fa89d.dir/src.c.o] Erreur 1
+make[1] : on quitte le répertoire « /home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp »
+Makefile:126 : la recette pour la cible « cmTC_fa89d/fast » a échouée
+make: *** [cmTC_fa89d/fast] Erreur 2
+
+Source file was:
+
+          vector unsigned int vzero() {
+              return vec_splat_u32(0);
+          }
+          int main(int argc, char **argv) { }
+Determining if the function strlcpy exists failed with the following output:
+Change Dir: /home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_4b312/fast"
+/usr/bin/make -f CMakeFiles/cmTC_4b312.dir/build.make CMakeFiles/cmTC_4b312.dir/build
+make[1] : on entre dans le répertoire « /home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp »
+Building C object CMakeFiles/cmTC_4b312.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -g -O3 -DCHECK_FUNCTION_EXISTS=strlcpy   -o CMakeFiles/cmTC_4b312.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+Linking C executable cmTC_4b312
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4b312.dir/link.txt --verbose=1
+/usr/bin/cc  -g -O3 -DCHECK_FUNCTION_EXISTS=strlcpy    CMakeFiles/cmTC_4b312.dir/CheckFunctionExists.c.o  -o cmTC_4b312 -rdynamic 
+CMakeFiles/cmTC_4b312.dir/CheckFunctionExists.c.o : Dans la fonction « main » :
+/usr/share/cmake-3.5/Modules/CheckFunctionExists.c:14 : référence indéfinie vers « strlcpy »
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_4b312.dir/build.make:97 : la recette pour la cible « cmTC_4b312 » a échouée
+make[1]: *** [cmTC_4b312] Erreur 1
+make[1] : on quitte le répertoire « /home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp »
+Makefile:126 : la recette pour la cible « cmTC_4b312/fast » a échouée
+make: *** [cmTC_4b312/fast] Erreur 2
+
+
+Determining if the function strlcat exists failed with the following output:
+Change Dir: /home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_49c10/fast"
+/usr/bin/make -f CMakeFiles/cmTC_49c10.dir/build.make CMakeFiles/cmTC_49c10.dir/build
+make[1] : on entre dans le répertoire « /home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp »
+Building C object CMakeFiles/cmTC_49c10.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -g -O3 -DCHECK_FUNCTION_EXISTS=strlcat   -o CMakeFiles/cmTC_49c10.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+Linking C executable cmTC_49c10
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_49c10.dir/link.txt --verbose=1
+/usr/bin/cc  -g -O3 -DCHECK_FUNCTION_EXISTS=strlcat    CMakeFiles/cmTC_49c10.dir/CheckFunctionExists.c.o  -o cmTC_49c10 -rdynamic 
+CMakeFiles/cmTC_49c10.dir/CheckFunctionExists.c.o : Dans la fonction « main » :
+/usr/share/cmake-3.5/Modules/CheckFunctionExists.c:14 : référence indéfinie vers « strlcat »
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_49c10.dir/build.make:97 : la recette pour la cible « cmTC_49c10 » a échouée
+make[1]: *** [cmTC_49c10] Erreur 1
+make[1] : on quitte le répertoire « /home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp »
+Makefile:126 : la recette pour la cible « cmTC_49c10/fast » a échouée
+make: *** [cmTC_49c10/fast] Erreur 2
+
+
+Determining if the function _strrev exists failed with the following output:
+Change Dir: /home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_93765/fast"
+/usr/bin/make -f CMakeFiles/cmTC_93765.dir/build.make CMakeFiles/cmTC_93765.dir/build
+make[1] : on entre dans le répertoire « /home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp »
+Building C object CMakeFiles/cmTC_93765.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -g -O3 -DCHECK_FUNCTION_EXISTS=_strrev   -o CMakeFiles/cmTC_93765.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+Linking C executable cmTC_93765
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_93765.dir/link.txt --verbose=1
+/usr/bin/cc  -g -O3 -DCHECK_FUNCTION_EXISTS=_strrev    CMakeFiles/cmTC_93765.dir/CheckFunctionExists.c.o  -o cmTC_93765 -rdynamic 
+CMakeFiles/cmTC_93765.dir/CheckFunctionExists.c.o : Dans la fonction « main » :
+/usr/share/cmake-3.5/Modules/CheckFunctionExists.c:14 : référence indéfinie vers « _strrev »
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_93765.dir/build.make:97 : la recette pour la cible « cmTC_93765 » a échouée
+make[1]: *** [cmTC_93765] Erreur 1
+make[1] : on quitte le répertoire « /home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp »
+Makefile:126 : la recette pour la cible « cmTC_93765/fast » a échouée
+make: *** [cmTC_93765/fast] Erreur 2
+
+
+Determining if the function _strupr exists failed with the following output:
+Change Dir: /home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_267b7/fast"
+/usr/bin/make -f CMakeFiles/cmTC_267b7.dir/build.make CMakeFiles/cmTC_267b7.dir/build
+make[1] : on entre dans le répertoire « /home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp »
+Building C object CMakeFiles/cmTC_267b7.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -g -O3 -DCHECK_FUNCTION_EXISTS=_strupr   -o CMakeFiles/cmTC_267b7.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+Linking C executable cmTC_267b7
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_267b7.dir/link.txt --verbose=1
+/usr/bin/cc  -g -O3 -DCHECK_FUNCTION_EXISTS=_strupr    CMakeFiles/cmTC_267b7.dir/CheckFunctionExists.c.o  -o cmTC_267b7 -rdynamic 
+CMakeFiles/cmTC_267b7.dir/CheckFunctionExists.c.o : Dans la fonction « main » :
+/usr/share/cmake-3.5/Modules/CheckFunctionExists.c:14 : référence indéfinie vers « _strupr »
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_267b7.dir/build.make:97 : la recette pour la cible « cmTC_267b7 » a échouée
+make[1]: *** [cmTC_267b7] Erreur 1
+make[1] : on quitte le répertoire « /home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp »
+Makefile:126 : la recette pour la cible « cmTC_267b7/fast » a échouée
+make: *** [cmTC_267b7/fast] Erreur 2
+
+
+Determining if the function _strlwr exists failed with the following output:
+Change Dir: /home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_5d0a8/fast"
+/usr/bin/make -f CMakeFiles/cmTC_5d0a8.dir/build.make CMakeFiles/cmTC_5d0a8.dir/build
+make[1] : on entre dans le répertoire « /home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp »
+Building C object CMakeFiles/cmTC_5d0a8.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -g -O3 -DCHECK_FUNCTION_EXISTS=_strlwr   -o CMakeFiles/cmTC_5d0a8.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+Linking C executable cmTC_5d0a8
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5d0a8.dir/link.txt --verbose=1
+/usr/bin/cc  -g -O3 -DCHECK_FUNCTION_EXISTS=_strlwr    CMakeFiles/cmTC_5d0a8.dir/CheckFunctionExists.c.o  -o cmTC_5d0a8 -rdynamic 
+CMakeFiles/cmTC_5d0a8.dir/CheckFunctionExists.c.o : Dans la fonction « main » :
+/usr/share/cmake-3.5/Modules/CheckFunctionExists.c:14 : référence indéfinie vers « _strlwr »
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_5d0a8.dir/build.make:97 : la recette pour la cible « cmTC_5d0a8 » a échouée
+make[1]: *** [cmTC_5d0a8] Erreur 1
+make[1] : on quitte le répertoire « /home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp »
+Makefile:126 : la recette pour la cible « cmTC_5d0a8/fast » a échouée
+make: *** [cmTC_5d0a8/fast] Erreur 2
+
+
+Determining if the function itoa exists failed with the following output:
+Change Dir: /home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_79152/fast"
+/usr/bin/make -f CMakeFiles/cmTC_79152.dir/build.make CMakeFiles/cmTC_79152.dir/build
+make[1] : on entre dans le répertoire « /home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp »
+Building C object CMakeFiles/cmTC_79152.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -g -O3 -DCHECK_FUNCTION_EXISTS=itoa   -o CMakeFiles/cmTC_79152.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+Linking C executable cmTC_79152
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_79152.dir/link.txt --verbose=1
+/usr/bin/cc  -g -O3 -DCHECK_FUNCTION_EXISTS=itoa    CMakeFiles/cmTC_79152.dir/CheckFunctionExists.c.o  -o cmTC_79152 -rdynamic 
+CMakeFiles/cmTC_79152.dir/CheckFunctionExists.c.o : Dans la fonction « main » :
+/usr/share/cmake-3.5/Modules/CheckFunctionExists.c:14 : référence indéfinie vers « itoa »
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_79152.dir/build.make:97 : la recette pour la cible « cmTC_79152 » a échouée
+make[1]: *** [cmTC_79152] Erreur 1
+make[1] : on quitte le répertoire « /home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp »
+Makefile:126 : la recette pour la cible « cmTC_79152/fast » a échouée
+make: *** [cmTC_79152/fast] Erreur 2
+
+
+Determining if the function _ltoa exists failed with the following output:
+Change Dir: /home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_9f366/fast"
+/usr/bin/make -f CMakeFiles/cmTC_9f366.dir/build.make CMakeFiles/cmTC_9f366.dir/build
+make[1] : on entre dans le répertoire « /home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp »
+Building C object CMakeFiles/cmTC_9f366.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -g -O3 -DCHECK_FUNCTION_EXISTS=_ltoa   -o CMakeFiles/cmTC_9f366.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+Linking C executable cmTC_9f366
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9f366.dir/link.txt --verbose=1
+/usr/bin/cc  -g -O3 -DCHECK_FUNCTION_EXISTS=_ltoa    CMakeFiles/cmTC_9f366.dir/CheckFunctionExists.c.o  -o cmTC_9f366 -rdynamic 
+CMakeFiles/cmTC_9f366.dir/CheckFunctionExists.c.o : Dans la fonction « main » :
+/usr/share/cmake-3.5/Modules/CheckFunctionExists.c:14 : référence indéfinie vers « _ltoa »
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_9f366.dir/build.make:97 : la recette pour la cible « cmTC_9f366 » a échouée
+make[1]: *** [cmTC_9f366] Erreur 1
+make[1] : on quitte le répertoire « /home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp »
+Makefile:126 : la recette pour la cible « cmTC_9f366/fast » a échouée
+make: *** [cmTC_9f366/fast] Erreur 2
+
+
+Determining if the function _uitoa exists failed with the following output:
+Change Dir: /home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_9b850/fast"
+/usr/bin/make -f CMakeFiles/cmTC_9b850.dir/build.make CMakeFiles/cmTC_9b850.dir/build
+make[1] : on entre dans le répertoire « /home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp »
+Building C object CMakeFiles/cmTC_9b850.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -g -O3 -DCHECK_FUNCTION_EXISTS=_uitoa   -o CMakeFiles/cmTC_9b850.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+Linking C executable cmTC_9b850
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9b850.dir/link.txt --verbose=1
+/usr/bin/cc  -g -O3 -DCHECK_FUNCTION_EXISTS=_uitoa    CMakeFiles/cmTC_9b850.dir/CheckFunctionExists.c.o  -o cmTC_9b850 -rdynamic 
+CMakeFiles/cmTC_9b850.dir/CheckFunctionExists.c.o : Dans la fonction « main » :
+/usr/share/cmake-3.5/Modules/CheckFunctionExists.c:14 : référence indéfinie vers « _uitoa »
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_9b850.dir/build.make:97 : la recette pour la cible « cmTC_9b850 » a échouée
+make[1]: *** [cmTC_9b850] Erreur 1
+make[1] : on quitte le répertoire « /home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp »
+Makefile:126 : la recette pour la cible « cmTC_9b850/fast » a échouée
+make: *** [cmTC_9b850/fast] Erreur 2
+
+
+Determining if the function _ultoa exists failed with the following output:
+Change Dir: /home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_6df12/fast"
+/usr/bin/make -f CMakeFiles/cmTC_6df12.dir/build.make CMakeFiles/cmTC_6df12.dir/build
+make[1] : on entre dans le répertoire « /home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp »
+Building C object CMakeFiles/cmTC_6df12.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -g -O3 -DCHECK_FUNCTION_EXISTS=_ultoa   -o CMakeFiles/cmTC_6df12.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+Linking C executable cmTC_6df12
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6df12.dir/link.txt --verbose=1
+/usr/bin/cc  -g -O3 -DCHECK_FUNCTION_EXISTS=_ultoa    CMakeFiles/cmTC_6df12.dir/CheckFunctionExists.c.o  -o cmTC_6df12 -rdynamic 
+CMakeFiles/cmTC_6df12.dir/CheckFunctionExists.c.o : Dans la fonction « main » :
+/usr/share/cmake-3.5/Modules/CheckFunctionExists.c:14 : référence indéfinie vers « _ultoa »
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_6df12.dir/build.make:97 : la recette pour la cible « cmTC_6df12 » a échouée
+make[1]: *** [cmTC_6df12] Erreur 1
+make[1] : on quitte le répertoire « /home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp »
+Makefile:126 : la recette pour la cible « cmTC_6df12/fast » a échouée
+make: *** [cmTC_6df12/fast] Erreur 2
+
+
+Determining if the function _i64toa exists failed with the following output:
+Change Dir: /home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_677ce/fast"
+/usr/bin/make -f CMakeFiles/cmTC_677ce.dir/build.make CMakeFiles/cmTC_677ce.dir/build
+make[1] : on entre dans le répertoire « /home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp »
+Building C object CMakeFiles/cmTC_677ce.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -g -O3 -DCHECK_FUNCTION_EXISTS=_i64toa   -o CMakeFiles/cmTC_677ce.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+Linking C executable cmTC_677ce
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_677ce.dir/link.txt --verbose=1
+/usr/bin/cc  -g -O3 -DCHECK_FUNCTION_EXISTS=_i64toa    CMakeFiles/cmTC_677ce.dir/CheckFunctionExists.c.o  -o cmTC_677ce -rdynamic 
+CMakeFiles/cmTC_677ce.dir/CheckFunctionExists.c.o : Dans la fonction « main » :
+/usr/share/cmake-3.5/Modules/CheckFunctionExists.c:14 : référence indéfinie vers « _i64toa »
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_677ce.dir/build.make:97 : la recette pour la cible « cmTC_677ce » a échouée
+make[1]: *** [cmTC_677ce] Erreur 1
+make[1] : on quitte le répertoire « /home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp »
+Makefile:126 : la recette pour la cible « cmTC_677ce/fast » a échouée
+make: *** [cmTC_677ce/fast] Erreur 2
+
+
+Determining if the function _ui64toa exists failed with the following output:
+Change Dir: /home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_35773/fast"
+/usr/bin/make -f CMakeFiles/cmTC_35773.dir/build.make CMakeFiles/cmTC_35773.dir/build
+make[1] : on entre dans le répertoire « /home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp »
+Building C object CMakeFiles/cmTC_35773.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -g -O3 -DCHECK_FUNCTION_EXISTS=_ui64toa   -o CMakeFiles/cmTC_35773.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+Linking C executable cmTC_35773
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_35773.dir/link.txt --verbose=1
+/usr/bin/cc  -g -O3 -DCHECK_FUNCTION_EXISTS=_ui64toa    CMakeFiles/cmTC_35773.dir/CheckFunctionExists.c.o  -o cmTC_35773 -rdynamic 
+CMakeFiles/cmTC_35773.dir/CheckFunctionExists.c.o : Dans la fonction « main » :
+/usr/share/cmake-3.5/Modules/CheckFunctionExists.c:14 : référence indéfinie vers « _ui64toa »
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_35773.dir/build.make:97 : la recette pour la cible « cmTC_35773 » a échouée
+make[1]: *** [cmTC_35773] Erreur 1
+make[1] : on quitte le répertoire « /home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp »
+Makefile:126 : la recette pour la cible « cmTC_35773/fast » a échouée
+make: *** [cmTC_35773/fast] Erreur 2
+
+
+Determining if the function _stricmp exists failed with the following output:
+Change Dir: /home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_d8952/fast"
+/usr/bin/make -f CMakeFiles/cmTC_d8952.dir/build.make CMakeFiles/cmTC_d8952.dir/build
+make[1] : on entre dans le répertoire « /home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp »
+Building C object CMakeFiles/cmTC_d8952.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -g -O3 -DCHECK_FUNCTION_EXISTS=_stricmp   -o CMakeFiles/cmTC_d8952.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+Linking C executable cmTC_d8952
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d8952.dir/link.txt --verbose=1
+/usr/bin/cc  -g -O3 -DCHECK_FUNCTION_EXISTS=_stricmp    CMakeFiles/cmTC_d8952.dir/CheckFunctionExists.c.o  -o cmTC_d8952 -rdynamic 
+CMakeFiles/cmTC_d8952.dir/CheckFunctionExists.c.o : Dans la fonction « main » :
+/usr/share/cmake-3.5/Modules/CheckFunctionExists.c:14 : référence indéfinie vers « _stricmp »
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_d8952.dir/build.make:97 : la recette pour la cible « cmTC_d8952 » a échouée
+make[1]: *** [cmTC_d8952] Erreur 1
+make[1] : on quitte le répertoire « /home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp »
+Makefile:126 : la recette pour la cible « cmTC_d8952/fast » a échouée
+make: *** [cmTC_d8952/fast] Erreur 2
+
+
+Determining if the function _strnicmp exists failed with the following output:
+Change Dir: /home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_4a716/fast"
+/usr/bin/make -f CMakeFiles/cmTC_4a716.dir/build.make CMakeFiles/cmTC_4a716.dir/build
+make[1] : on entre dans le répertoire « /home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp »
+Building C object CMakeFiles/cmTC_4a716.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -g -O3 -DCHECK_FUNCTION_EXISTS=_strnicmp   -o CMakeFiles/cmTC_4a716.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+Linking C executable cmTC_4a716
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4a716.dir/link.txt --verbose=1
+/usr/bin/cc  -g -O3 -DCHECK_FUNCTION_EXISTS=_strnicmp    CMakeFiles/cmTC_4a716.dir/CheckFunctionExists.c.o  -o cmTC_4a716 -rdynamic 
+CMakeFiles/cmTC_4a716.dir/CheckFunctionExists.c.o : Dans la fonction « main » :
+/usr/share/cmake-3.5/Modules/CheckFunctionExists.c:14 : référence indéfinie vers « _strnicmp »
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_4a716.dir/build.make:97 : la recette pour la cible « cmTC_4a716 » a échouée
+make[1]: *** [cmTC_4a716] Erreur 1
+make[1] : on quitte le répertoire « /home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp »
+Makefile:126 : la recette pour la cible « cmTC_4a716/fast » a échouée
+make: *** [cmTC_4a716/fast] Erreur 2
+
+
+Determining if the function sysctlbyname exists failed with the following output:
+Change Dir: /home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_84cb9/fast"
+/usr/bin/make -f CMakeFiles/cmTC_84cb9.dir/build.make CMakeFiles/cmTC_84cb9.dir/build
+make[1] : on entre dans le répertoire « /home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp »
+Building C object CMakeFiles/cmTC_84cb9.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -g -O3 -DCHECK_FUNCTION_EXISTS=sysctlbyname   -o CMakeFiles/cmTC_84cb9.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+Linking C executable cmTC_84cb9
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_84cb9.dir/link.txt --verbose=1
+/usr/bin/cc  -g -O3 -DCHECK_FUNCTION_EXISTS=sysctlbyname    CMakeFiles/cmTC_84cb9.dir/CheckFunctionExists.c.o  -o cmTC_84cb9 -rdynamic 
+CMakeFiles/cmTC_84cb9.dir/CheckFunctionExists.c.o : Dans la fonction « main » :
+/usr/share/cmake-3.5/Modules/CheckFunctionExists.c:14 : référence indéfinie vers « sysctlbyname »
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_84cb9.dir/build.make:97 : la recette pour la cible « cmTC_84cb9 » a échouée
+make[1]: *** [cmTC_84cb9] Erreur 1
+make[1] : on quitte le répertoire « /home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp »
+Makefile:126 : la recette pour la cible « cmTC_84cb9/fast » a échouée
+make: *** [cmTC_84cb9/fast] Erreur 2
+
+
+Determining if the function iconv_open exists in the iconv failed with the following output:
+Change Dir: /home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_82151/fast"
+/usr/bin/make -f CMakeFiles/cmTC_82151.dir/build.make CMakeFiles/cmTC_82151.dir/build
+make[1] : on entre dans le répertoire « /home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp »
+Building C object CMakeFiles/cmTC_82151.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -g -O3 -DCHECK_FUNCTION_EXISTS=iconv_open   -o CMakeFiles/cmTC_82151.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+Linking C executable cmTC_82151
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_82151.dir/link.txt --verbose=1
+/usr/bin/cc  -g -O3 -DCHECK_FUNCTION_EXISTS=iconv_open    CMakeFiles/cmTC_82151.dir/CheckFunctionExists.c.o  -o cmTC_82151 -rdynamic -liconv 
+/usr/bin/ld : ne peut trouver -liconv
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_82151.dir/build.make:97 : la recette pour la cible « cmTC_82151 » a échouée
+make[1]: *** [cmTC_82151] Erreur 1
+make[1] : on quitte le répertoire « /home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp »
+Makefile:126 : la recette pour la cible « cmTC_82151/fast » a échouée
+make: *** [cmTC_82151/fast] Erreur 2
+
+
+Determining if the function alloca exists failed with the following output:
+Change Dir: /home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_2e5b0/fast"
+/usr/bin/make -f CMakeFiles/cmTC_2e5b0.dir/build.make CMakeFiles/cmTC_2e5b0.dir/build
+make[1] : on entre dans le répertoire « /home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp »
+Building C object CMakeFiles/cmTC_2e5b0.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -g -O3 -DCHECK_FUNCTION_EXISTS=alloca   -o CMakeFiles/cmTC_2e5b0.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+<command-line>:0:23: warning: conflicting types for built-in function ‘alloca’
+/usr/share/cmake-3.5/Modules/CheckFunctionExists.c:6:6: note: in expansion of macro ‘CHECK_FUNCTION_EXISTS’
+ char CHECK_FUNCTION_EXISTS();
+      ^
+Linking C executable cmTC_2e5b0
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2e5b0.dir/link.txt --verbose=1
+/usr/bin/cc  -g -O3 -DCHECK_FUNCTION_EXISTS=alloca    CMakeFiles/cmTC_2e5b0.dir/CheckFunctionExists.c.o  -o cmTC_2e5b0 -rdynamic 
+CMakeFiles/cmTC_2e5b0.dir/CheckFunctionExists.c.o : Dans la fonction « main » :
+/usr/share/cmake-3.5/Modules/CheckFunctionExists.c:14 : référence indéfinie vers « alloca »
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_2e5b0.dir/build.make:97 : la recette pour la cible « cmTC_2e5b0 » a échouée
+make[1]: *** [cmTC_2e5b0] Erreur 1
+make[1] : on quitte le répertoire « /home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp »
+Makefile:126 : la recette pour la cible « cmTC_2e5b0/fast » a échouée
+make: *** [cmTC_2e5b0/fast] Erreur 2
+
+
+Determining if the function dlopen exists failed with the following output:
+Change Dir: /home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_c19df/fast"
+/usr/bin/make -f CMakeFiles/cmTC_c19df.dir/build.make CMakeFiles/cmTC_c19df.dir/build
+make[1] : on entre dans le répertoire « /home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp »
+Building C object CMakeFiles/cmTC_c19df.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -g -O3 -DCHECK_FUNCTION_EXISTS=dlopen   -o CMakeFiles/cmTC_c19df.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+Linking C executable cmTC_c19df
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c19df.dir/link.txt --verbose=1
+/usr/bin/cc  -g -O3 -DCHECK_FUNCTION_EXISTS=dlopen    CMakeFiles/cmTC_c19df.dir/CheckFunctionExists.c.o  -o cmTC_c19df -rdynamic 
+CMakeFiles/cmTC_c19df.dir/CheckFunctionExists.c.o : Dans la fonction « main » :
+/usr/share/cmake-3.5/Modules/CheckFunctionExists.c:14 : référence indéfinie vers « dlopen »
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_c19df.dir/build.make:97 : la recette pour la cible « cmTC_c19df » a échouée
+make[1]: *** [cmTC_c19df] Erreur 1
+make[1] : on quitte le répertoire « /home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp »
+Makefile:126 : la recette pour la cible « cmTC_c19df/fast » a échouée
+make: *** [cmTC_c19df/fast] Erreur 2
+
+
+Determining if the include file alsa/asoundlib.h exists failed with the following output:
+Change Dir: /home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_6cdcb/fast"
+/usr/bin/make -f CMakeFiles/cmTC_6cdcb.dir/build.make CMakeFiles/cmTC_6cdcb.dir/build
+make[1] : on entre dans le répertoire « /home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp »
+Building C object CMakeFiles/cmTC_6cdcb.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -g -O3    -o CMakeFiles/cmTC_6cdcb.dir/CheckIncludeFile.c.o   -c /home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:28: fatal error: alsa/asoundlib.h: Aucun fichier ou dossier de ce type
+compilation terminated.
+CMakeFiles/cmTC_6cdcb.dir/build.make:65 : la recette pour la cible « CMakeFiles/cmTC_6cdcb.dir/CheckIncludeFile.c.o » a échouée
+make[1]: *** [CMakeFiles/cmTC_6cdcb.dir/CheckIncludeFile.c.o] Erreur 1
+make[1] : on quitte le répertoire « /home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp »
+Makefile:126 : la recette pour la cible « cmTC_6cdcb/fast » a échouée
+make: *** [cmTC_6cdcb/fast] Erreur 2
+
+
+Determining if the include file audio/audiolib.h exists failed with the following output:
+Change Dir: /home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_dd7d5/fast"
+/usr/bin/make -f CMakeFiles/cmTC_dd7d5.dir/build.make CMakeFiles/cmTC_dd7d5.dir/build
+make[1] : on entre dans le répertoire « /home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp »
+Building C object CMakeFiles/cmTC_dd7d5.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -g -O3    -o CMakeFiles/cmTC_dd7d5.dir/CheckIncludeFile.c.o   -c /home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:28: fatal error: audio/audiolib.h: Aucun fichier ou dossier de ce type
+compilation terminated.
+CMakeFiles/cmTC_dd7d5.dir/build.make:65 : la recette pour la cible « CMakeFiles/cmTC_dd7d5.dir/CheckIncludeFile.c.o » a échouée
+make[1]: *** [CMakeFiles/cmTC_dd7d5.dir/CheckIncludeFile.c.o] Erreur 1
+make[1] : on quitte le répertoire « /home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp »
+Makefile:126 : la recette pour la cible « cmTC_dd7d5/fast » a échouée
+make: *** [cmTC_dd7d5/fast] Erreur 2
+
+
+Determining if the include file sndio.h exists failed with the following output:
+Change Dir: /home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_0fad3/fast"
+/usr/bin/make -f CMakeFiles/cmTC_0fad3.dir/build.make CMakeFiles/cmTC_0fad3.dir/build
+make[1] : on entre dans le répertoire « /home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp »
+Building C object CMakeFiles/cmTC_0fad3.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -g -O3    -o CMakeFiles/cmTC_0fad3.dir/CheckIncludeFile.c.o   -c /home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:19: fatal error: sndio.h: Aucun fichier ou dossier de ce type
+compilation terminated.
+CMakeFiles/cmTC_0fad3.dir/build.make:65 : la recette pour la cible « CMakeFiles/cmTC_0fad3.dir/CheckIncludeFile.c.o » a échouée
+make[1]: *** [CMakeFiles/cmTC_0fad3.dir/CheckIncludeFile.c.o] Erreur 1
+make[1] : on quitte le répertoire « /home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp »
+Makefile:126 : la recette pour la cible « cmTC_0fad3/fast » a échouée
+make: *** [cmTC_0fad3/fast] Erreur 2
+
+
+Performing C SOURCE FILE Test HAVE_VIDEO_RPI failed with the following output:
+Change Dir: /home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_78dd6/fast"
+/usr/bin/make -f CMakeFiles/cmTC_78dd6.dir/build.make CMakeFiles/cmTC_78dd6.dir/build
+make[1] : on entre dans le répertoire « /home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp »
+Building C object CMakeFiles/cmTC_78dd6.dir/src.c.o
+/usr/bin/cc    -g -O3 -DHAVE_VIDEO_RPI -I/opt/vc/include/interface/vmcs_host/linux/ -I/opt/vc/include/interface/vcos/pthreads -I/opt/vc/include  -L/opt/vc/lib   -o CMakeFiles/cmTC_78dd6.dir/src.c.o   -c /home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp/src.c
+/home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp/src.c:2:30: fatal error: bcm_host.h: Aucun fichier ou dossier de ce type
+compilation terminated.
+CMakeFiles/cmTC_78dd6.dir/build.make:65 : la recette pour la cible « CMakeFiles/cmTC_78dd6.dir/src.c.o » a échouée
+make[1]: *** [CMakeFiles/cmTC_78dd6.dir/src.c.o] Erreur 1
+make[1] : on quitte le répertoire « /home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp »
+Makefile:126 : la recette pour la cible « cmTC_78dd6/fast » a échouée
+make: *** [cmTC_78dd6/fast] Erreur 2
+
+Source file was:
+
+        #include <bcm_host.h>
+        int main(int argc, char **argv) {}
+Determining if the include file X11/Xcursor/Xcursor.h exists failed with the following output:
+Change Dir: /home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_5f2a0/fast"
+/usr/bin/make -f CMakeFiles/cmTC_5f2a0.dir/build.make CMakeFiles/cmTC_5f2a0.dir/build
+make[1] : on entre dans le répertoire « /home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp »
+Building C object CMakeFiles/cmTC_5f2a0.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -g -O3    -o CMakeFiles/cmTC_5f2a0.dir/CheckIncludeFile.c.o   -c /home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:33: fatal error: X11/Xcursor/Xcursor.h: Aucun fichier ou dossier de ce type
+compilation terminated.
+CMakeFiles/cmTC_5f2a0.dir/build.make:65 : la recette pour la cible « CMakeFiles/cmTC_5f2a0.dir/CheckIncludeFile.c.o » a échouée
+make[1]: *** [CMakeFiles/cmTC_5f2a0.dir/CheckIncludeFile.c.o] Erreur 1
+make[1] : on quitte le répertoire « /home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp »
+Makefile:126 : la recette pour la cible « cmTC_5f2a0/fast » a échouée
+make: *** [cmTC_5f2a0/fast] Erreur 2
+
+
+Determining if the include file X11/extensions/Xinerama.h exists failed with the following output:
+Change Dir: /home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_26d2b/fast"
+/usr/bin/make -f CMakeFiles/cmTC_26d2b.dir/build.make CMakeFiles/cmTC_26d2b.dir/build
+make[1] : on entre dans le répertoire « /home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp »
+Building C object CMakeFiles/cmTC_26d2b.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -g -O3    -o CMakeFiles/cmTC_26d2b.dir/CheckIncludeFile.c.o   -c /home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:37: fatal error: X11/extensions/Xinerama.h: Aucun fichier ou dossier de ce type
+compilation terminated.
+CMakeFiles/cmTC_26d2b.dir/build.make:65 : la recette pour la cible « CMakeFiles/cmTC_26d2b.dir/CheckIncludeFile.c.o » a échouée
+make[1]: *** [CMakeFiles/cmTC_26d2b.dir/CheckIncludeFile.c.o] Erreur 1
+make[1] : on quitte le répertoire « /home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp »
+Makefile:126 : la recette pour la cible « cmTC_26d2b/fast » a échouée
+make: *** [cmTC_26d2b/fast] Erreur 2
+
+
+Determining if the include file X11/extensions/XInput2.h exists failed with the following output:
+Change Dir: /home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_516e2/fast"
+/usr/bin/make -f CMakeFiles/cmTC_516e2.dir/build.make CMakeFiles/cmTC_516e2.dir/build
+make[1] : on entre dans le répertoire « /home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp »
+Building C object CMakeFiles/cmTC_516e2.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -g -O3    -o CMakeFiles/cmTC_516e2.dir/CheckIncludeFile.c.o   -c /home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:36: fatal error: X11/extensions/XInput2.h: Aucun fichier ou dossier de ce type
+compilation terminated.
+CMakeFiles/cmTC_516e2.dir/build.make:65 : la recette pour la cible « CMakeFiles/cmTC_516e2.dir/CheckIncludeFile.c.o » a échouée
+make[1]: *** [CMakeFiles/cmTC_516e2.dir/CheckIncludeFile.c.o] Erreur 1
+make[1] : on quitte le répertoire « /home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp »
+Makefile:126 : la recette pour la cible « cmTC_516e2/fast » a échouée
+make: *** [cmTC_516e2/fast] Erreur 2
+
+
+Determining if the include file X11/extensions/Xrandr.h exists failed with the following output:
+Change Dir: /home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_1a9b1/fast"
+/usr/bin/make -f CMakeFiles/cmTC_1a9b1.dir/build.make CMakeFiles/cmTC_1a9b1.dir/build
+make[1] : on entre dans le répertoire « /home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp »
+Building C object CMakeFiles/cmTC_1a9b1.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -g -O3    -o CMakeFiles/cmTC_1a9b1.dir/CheckIncludeFile.c.o   -c /home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:35: fatal error: X11/extensions/Xrandr.h: Aucun fichier ou dossier de ce type
+compilation terminated.
+CMakeFiles/cmTC_1a9b1.dir/build.make:65 : la recette pour la cible « CMakeFiles/cmTC_1a9b1.dir/CheckIncludeFile.c.o » a échouée
+make[1]: *** [CMakeFiles/cmTC_1a9b1.dir/CheckIncludeFile.c.o] Erreur 1
+make[1] : on quitte le répertoire « /home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp »
+Makefile:126 : la recette pour la cible « cmTC_1a9b1/fast » a échouée
+make: *** [cmTC_1a9b1/fast] Erreur 2
+
+
+Determining if the include file X11/extensions/Xrender.h exists failed with the following output:
+Change Dir: /home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_5bf46/fast"
+/usr/bin/make -f CMakeFiles/cmTC_5bf46.dir/build.make CMakeFiles/cmTC_5bf46.dir/build
+make[1] : on entre dans le répertoire « /home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp »
+Building C object CMakeFiles/cmTC_5bf46.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -g -O3    -o CMakeFiles/cmTC_5bf46.dir/CheckIncludeFile.c.o   -c /home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:36: fatal error: X11/extensions/Xrender.h: Aucun fichier ou dossier de ce type
+compilation terminated.
+CMakeFiles/cmTC_5bf46.dir/build.make:65 : la recette pour la cible « CMakeFiles/cmTC_5bf46.dir/CheckIncludeFile.c.o » a échouée
+make[1]: *** [CMakeFiles/cmTC_5bf46.dir/CheckIncludeFile.c.o] Erreur 1
+make[1] : on quitte le répertoire « /home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp »
+Makefile:126 : la recette pour la cible « cmTC_5bf46/fast » a échouée
+make: *** [cmTC_5bf46/fast] Erreur 2
+
+
+Determining if the include file X11/extensions/scrnsaver.h exists failed with the following output:
+Change Dir: /home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_a5760/fast"
+/usr/bin/make -f CMakeFiles/cmTC_a5760.dir/build.make CMakeFiles/cmTC_a5760.dir/build
+make[1] : on entre dans le répertoire « /home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp »
+Building C object CMakeFiles/cmTC_a5760.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -g -O3    -o CMakeFiles/cmTC_a5760.dir/CheckIncludeFile.c.o   -c /home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:38: fatal error: X11/extensions/scrnsaver.h: Aucun fichier ou dossier de ce type
+compilation terminated.
+CMakeFiles/cmTC_a5760.dir/build.make:65 : la recette pour la cible « CMakeFiles/cmTC_a5760.dir/CheckIncludeFile.c.o » a échouée
+make[1]: *** [CMakeFiles/cmTC_a5760.dir/CheckIncludeFile.c.o] Erreur 1
+make[1] : on quitte le répertoire « /home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp »
+Makefile:126 : la recette pour la cible « cmTC_a5760/fast » a échouée
+make: *** [cmTC_a5760/fast] Erreur 2
+
+
+Determining if the include file X11/extensions/shape.h exists failed with the following output:
+Change Dir: /home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_0b30c/fast"
+/usr/bin/make -f CMakeFiles/cmTC_0b30c.dir/build.make CMakeFiles/cmTC_0b30c.dir/build
+make[1] : on entre dans le répertoire « /home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp »
+Building C object CMakeFiles/cmTC_0b30c.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -g -O3    -o CMakeFiles/cmTC_0b30c.dir/CheckIncludeFile.c.o   -c /home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:34: fatal error: X11/extensions/shape.h: Aucun fichier ou dossier de ce type
+compilation terminated.
+CMakeFiles/cmTC_0b30c.dir/build.make:65 : la recette pour la cible « CMakeFiles/cmTC_0b30c.dir/CheckIncludeFile.c.o » a échouée
+make[1]: *** [CMakeFiles/cmTC_0b30c.dir/CheckIncludeFile.c.o] Erreur 1
+make[1] : on quitte le répertoire « /home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp »
+Makefile:126 : la recette pour la cible « cmTC_0b30c/fast » a échouée
+make: *** [cmTC_0b30c/fast] Erreur 2
+
+
+Determining if files X11/Xlib.h;X11/extensions/xf86vmode.h exist failed with the following output:
+Change Dir: /home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_bd0dc/fast"
+/usr/bin/make -f CMakeFiles/cmTC_bd0dc.dir/build.make CMakeFiles/cmTC_bd0dc.dir/build
+make[1] : on entre dans le répertoire « /home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp »
+Building C object CMakeFiles/cmTC_bd0dc.dir/CheckIncludeFiles.c.o
+/usr/bin/cc    -g -O3    -o CMakeFiles/cmTC_bd0dc.dir/CheckIncludeFiles.c.o   -c /home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:2:22: fatal error: X11/Xlib.h: Aucun fichier ou dossier de ce type
+compilation terminated.
+CMakeFiles/cmTC_bd0dc.dir/build.make:65 : la recette pour la cible « CMakeFiles/cmTC_bd0dc.dir/CheckIncludeFiles.c.o » a échouée
+make[1]: *** [CMakeFiles/cmTC_bd0dc.dir/CheckIncludeFiles.c.o] Erreur 1
+make[1] : on quitte le répertoire « /home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp »
+Makefile:126 : la recette pour la cible « cmTC_bd0dc/fast » a échouée
+make: *** [cmTC_bd0dc/fast] Erreur 2
+
+Source:
+/* */
+#include <X11/Xlib.h>
+#include <X11/extensions/xf86vmode.h>
+
+
+int main(void){return 0;}
+
+Determining if files X11/Xlib.h;X11/Xproto.h;X11/extensions/Xext.h exist failed with the following output:
+Change Dir: /home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_877dd/fast"
+/usr/bin/make -f CMakeFiles/cmTC_877dd.dir/build.make CMakeFiles/cmTC_877dd.dir/build
+make[1] : on entre dans le répertoire « /home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp »
+Building C object CMakeFiles/cmTC_877dd.dir/CheckIncludeFiles.c.o
+/usr/bin/cc    -g -O3    -o CMakeFiles/cmTC_877dd.dir/CheckIncludeFiles.c.o   -c /home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:2:22: fatal error: X11/Xlib.h: Aucun fichier ou dossier de ce type
+compilation terminated.
+CMakeFiles/cmTC_877dd.dir/build.make:65 : la recette pour la cible « CMakeFiles/cmTC_877dd.dir/CheckIncludeFiles.c.o » a échouée
+make[1]: *** [CMakeFiles/cmTC_877dd.dir/CheckIncludeFiles.c.o] Erreur 1
+make[1] : on quitte le répertoire « /home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp »
+Makefile:126 : la recette pour la cible « cmTC_877dd/fast » a échouée
+make: *** [cmTC_877dd/fast] Erreur 2
+
+Source:
+/* */
+#include <X11/Xlib.h>
+#include <X11/Xproto.h>
+#include <X11/extensions/Xext.h>
+
+
+int main(void){return 0;}
+
+Performing C SOURCE FILE Test HAVE_VIDEO_OPENGL failed with the following output:
+Change Dir: /home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_6ee63/fast"
+/usr/bin/make -f CMakeFiles/cmTC_6ee63.dir/build.make CMakeFiles/cmTC_6ee63.dir/build
+make[1] : on entre dans le répertoire « /home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp »
+Building C object CMakeFiles/cmTC_6ee63.dir/src.c.o
+/usr/bin/cc    -g -O3 -DHAVE_VIDEO_OPENGL   -o CMakeFiles/cmTC_6ee63.dir/src.c.o   -c /home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp/src.c
+/home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp/src.c:2:27: fatal error: GL/gl.h: Aucun fichier ou dossier de ce type
+compilation terminated.
+CMakeFiles/cmTC_6ee63.dir/build.make:65 : la recette pour la cible « CMakeFiles/cmTC_6ee63.dir/src.c.o » a échouée
+make[1]: *** [CMakeFiles/cmTC_6ee63.dir/src.c.o] Erreur 1
+make[1] : on quitte le répertoire « /home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp »
+Makefile:126 : la recette pour la cible « cmTC_6ee63/fast » a échouée
+make: *** [cmTC_6ee63/fast] Erreur 2
+
+Source file was:
+
+        #include <GL/gl.h>
+        #include <GL/glx.h>
+        int main(int argc, char** argv) {}
+Performing C SOURCE FILE Test HAVE_VIDEO_OPENGL_EGL failed with the following output:
+Change Dir: /home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_4a9a1/fast"
+/usr/bin/make -f CMakeFiles/cmTC_4a9a1.dir/build.make CMakeFiles/cmTC_4a9a1.dir/build
+make[1] : on entre dans le répertoire « /home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp »
+Building C object CMakeFiles/cmTC_4a9a1.dir/src.c.o
+/usr/bin/cc    -g -O3 -DHAVE_VIDEO_OPENGL_EGL   -o CMakeFiles/cmTC_4a9a1.dir/src.c.o   -c /home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp/src.c
+/home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp/src.c:3:29: fatal error: EGL/egl.h: Aucun fichier ou dossier de ce type
+compilation terminated.
+CMakeFiles/cmTC_4a9a1.dir/build.make:65 : la recette pour la cible « CMakeFiles/cmTC_4a9a1.dir/src.c.o » a échouée
+make[1]: *** [CMakeFiles/cmTC_4a9a1.dir/src.c.o] Erreur 1
+make[1] : on quitte le répertoire « /home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp »
+Makefile:126 : la recette pour la cible « cmTC_4a9a1/fast » a échouée
+make: *** [cmTC_4a9a1/fast] Erreur 2
+
+Source file was:
+
+        #define EGL_API_FB
+        #include <EGL/egl.h>
+        int main (int argc, char** argv) {}
+Performing C SOURCE FILE Test HAVE_VIDEO_OPENGLES_V1 failed with the following output:
+Change Dir: /home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_ebde7/fast"
+/usr/bin/make -f CMakeFiles/cmTC_ebde7.dir/build.make CMakeFiles/cmTC_ebde7.dir/build
+make[1] : on entre dans le répertoire « /home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp »
+Building C object CMakeFiles/cmTC_ebde7.dir/src.c.o
+/usr/bin/cc    -g -O3 -DHAVE_VIDEO_OPENGLES_V1   -o CMakeFiles/cmTC_ebde7.dir/src.c.o   -c /home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp/src.c
+/home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp/src.c:2:27: fatal error: GLES/gl.h: Aucun fichier ou dossier de ce type
+compilation terminated.
+CMakeFiles/cmTC_ebde7.dir/build.make:65 : la recette pour la cible « CMakeFiles/cmTC_ebde7.dir/src.c.o » a échouée
+make[1]: *** [CMakeFiles/cmTC_ebde7.dir/src.c.o] Erreur 1
+make[1] : on quitte le répertoire « /home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp »
+Makefile:126 : la recette pour la cible « cmTC_ebde7/fast » a échouée
+make: *** [cmTC_ebde7/fast] Erreur 2
+
+Source file was:
+
+      #include <GLES/gl.h>
+      #include <GLES/glext.h>
+      int main (int argc, char** argv) {}
+Performing C SOURCE FILE Test HAVE_VIDEO_OPENGLES_V2 failed with the following output:
+Change Dir: /home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_2647a/fast"
+/usr/bin/make -f CMakeFiles/cmTC_2647a.dir/build.make CMakeFiles/cmTC_2647a.dir/build
+make[1] : on entre dans le répertoire « /home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp »
+Building C object CMakeFiles/cmTC_2647a.dir/src.c.o
+/usr/bin/cc    -g -O3 -DHAVE_VIDEO_OPENGLES_V2   -o CMakeFiles/cmTC_2647a.dir/src.c.o   -c /home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp/src.c
+/home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp/src.c:2:29: fatal error: GLES2/gl2.h: Aucun fichier ou dossier de ce type
+compilation terminated.
+CMakeFiles/cmTC_2647a.dir/build.make:65 : la recette pour la cible « CMakeFiles/cmTC_2647a.dir/src.c.o » a échouée
+make[1]: *** [CMakeFiles/cmTC_2647a.dir/src.c.o] Erreur 1
+make[1] : on quitte le répertoire « /home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp »
+Makefile:126 : la recette pour la cible « cmTC_2647a/fast » a échouée
+make: *** [cmTC_2647a/fast] Erreur 2
+
+Source file was:
+
+      #include <GLES2/gl2.h>
+      #include <GLES2/gl2ext.h>
+      int main (int argc, char** argv) {}
+Performing C SOURCE FILE Test HAVE_VIDEO_VIVANTE_VDK failed with the following output:
+Change Dir: /home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_89a83/fast"
+/usr/bin/make -f CMakeFiles/cmTC_89a83.dir/build.make CMakeFiles/cmTC_89a83.dir/build
+make[1] : on entre dans le répertoire « /home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp »
+Building C object CMakeFiles/cmTC_89a83.dir/src.c.o
+/usr/bin/cc    -g -O3 -DHAVE_VIDEO_VIVANTE_VDK   -o CMakeFiles/cmTC_89a83.dir/src.c.o   -c /home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp/src.c
+/home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp/src.c:2:28: fatal error: gc_vdk.h: Aucun fichier ou dossier de ce type
+compilation terminated.
+CMakeFiles/cmTC_89a83.dir/build.make:65 : la recette pour la cible « CMakeFiles/cmTC_89a83.dir/src.c.o » a échouée
+make[1]: *** [CMakeFiles/cmTC_89a83.dir/src.c.o] Erreur 1
+make[1] : on quitte le répertoire « /home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp »
+Makefile:126 : la recette pour la cible « cmTC_89a83/fast » a échouée
+make: *** [cmTC_89a83/fast] Erreur 2
+
+Source file was:
+
+        #include <gc_vdk.h>
+        int main(int argc, char** argv) {}
+Performing C SOURCE FILE Test HAVE_VIDEO_VIVANTE_EGL_FB failed with the following output:
+Change Dir: /home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_49a95/fast"
+/usr/bin/make -f CMakeFiles/cmTC_49a95.dir/build.make CMakeFiles/cmTC_49a95.dir/build
+make[1] : on entre dans le répertoire « /home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp »
+Building C object CMakeFiles/cmTC_49a95.dir/src.c.o
+/usr/bin/cc    -g -O3 -DHAVE_VIDEO_VIVANTE_EGL_FB   -o CMakeFiles/cmTC_49a95.dir/src.c.o   -c /home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp/src.c
+/home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp/src.c:4:36: fatal error: EGL/eglvivante.h: Aucun fichier ou dossier de ce type
+compilation terminated.
+CMakeFiles/cmTC_49a95.dir/build.make:65 : la recette pour la cible « CMakeFiles/cmTC_49a95.dir/src.c.o » a échouée
+make[1]: *** [CMakeFiles/cmTC_49a95.dir/src.c.o] Erreur 1
+make[1] : on quitte le répertoire « /home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp »
+Makefile:126 : la recette pour la cible « cmTC_49a95/fast » a échouée
+make: *** [cmTC_49a95/fast] Erreur 2
+
+Source file was:
+
+        #define LINUX
+        #define EGL_API_FB
+        #include <EGL/eglvivante.h>
+        int main(int argc, char** argv) {}
+Determining if the include file libudev.h exists failed with the following output:
+Change Dir: /home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_c859d/fast"
+/usr/bin/make -f CMakeFiles/cmTC_c859d.dir/build.make CMakeFiles/cmTC_c859d.dir/build
+make[1] : on entre dans le répertoire « /home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp »
+Building C object CMakeFiles/cmTC_c859d.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -g -O3    -o CMakeFiles/cmTC_c859d.dir/CheckIncludeFile.c.o   -c /home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:21: fatal error: libudev.h: Aucun fichier ou dossier de ce type
+compilation terminated.
+CMakeFiles/cmTC_c859d.dir/build.make:65 : la recette pour la cible « CMakeFiles/cmTC_c859d.dir/CheckIncludeFile.c.o » a échouée
+make[1]: *** [CMakeFiles/cmTC_c859d.dir/CheckIncludeFile.c.o] Erreur 1
+make[1] : on quitte le répertoire « /home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp »
+Makefile:126 : la recette pour la cible « cmTC_c859d/fast » a échouée
+make: *** [cmTC_c859d/fast] Erreur 2
+
+
+Determining if the include file dbus/dbus.h exists failed with the following output:
+Change Dir: /home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_78197/fast"
+/usr/bin/make -f CMakeFiles/cmTC_78197.dir/build.make CMakeFiles/cmTC_78197.dir/build
+make[1] : on entre dans le répertoire « /home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp »
+Building C object CMakeFiles/cmTC_78197.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -g -O3    -o CMakeFiles/cmTC_78197.dir/CheckIncludeFile.c.o   -c /home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:23: fatal error: dbus/dbus.h: Aucun fichier ou dossier de ce type
+compilation terminated.
+CMakeFiles/cmTC_78197.dir/build.make:65 : la recette pour la cible « CMakeFiles/cmTC_78197.dir/CheckIncludeFile.c.o » a échouée
+make[1]: *** [CMakeFiles/cmTC_78197.dir/CheckIncludeFile.c.o] Erreur 1
+make[1] : on quitte le répertoire « /home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp »
+Makefile:126 : la recette pour la cible « cmTC_78197/fast » a échouée
+make: *** [cmTC_78197/fast] Erreur 2
+
+
+Performing C SOURCE FILE Test HAVE_INPUT_TSLIB failed with the following output:
+Change Dir: /home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_4202e/fast"
+/usr/bin/make -f CMakeFiles/cmTC_4202e.dir/build.make CMakeFiles/cmTC_4202e.dir/build
+make[1] : on entre dans le répertoire « /home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp »
+Building C object CMakeFiles/cmTC_4202e.dir/src.c.o
+/usr/bin/cc    -g -O3 -DHAVE_INPUT_TSLIB   -o CMakeFiles/cmTC_4202e.dir/src.c.o   -c /home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp/src.c
+/home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp/src.c:2:27: fatal error: tslib.h: Aucun fichier ou dossier de ce type
+compilation terminated.
+CMakeFiles/cmTC_4202e.dir/build.make:65 : la recette pour la cible « CMakeFiles/cmTC_4202e.dir/src.c.o » a échouée
+make[1]: *** [CMakeFiles/cmTC_4202e.dir/src.c.o] Erreur 1
+make[1] : on quitte le répertoire « /home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp »
+Makefile:126 : la recette pour la cible « cmTC_4202e/fast » a échouée
+make: *** [cmTC_4202e/fast] Erreur 2
+
+Source file was:
+
+        #include "tslib.h"
+        int main(int argc, char** argv) { }
+Determining if the function hid_init exists in the usbhid failed with the following output:
+Change Dir: /home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_ff965/fast"
+/usr/bin/make -f CMakeFiles/cmTC_ff965.dir/build.make CMakeFiles/cmTC_ff965.dir/build
+make[1] : on entre dans le répertoire « /home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp »
+Building C object CMakeFiles/cmTC_ff965.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -g -O3 -DCHECK_FUNCTION_EXISTS=hid_init   -o CMakeFiles/cmTC_ff965.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+Linking C executable cmTC_ff965
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ff965.dir/link.txt --verbose=1
+/usr/bin/cc  -g -O3 -DCHECK_FUNCTION_EXISTS=hid_init    CMakeFiles/cmTC_ff965.dir/CheckFunctionExists.c.o  -o cmTC_ff965 -rdynamic -lusbhid 
+/usr/bin/ld : ne peut trouver -lusbhid
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_ff965.dir/build.make:97 : la recette pour la cible « cmTC_ff965 » a échouée
+make[1]: *** [cmTC_ff965] Erreur 1
+make[1] : on quitte le répertoire « /home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp »
+Makefile:126 : la recette pour la cible « cmTC_ff965/fast » a échouée
+make: *** [cmTC_ff965/fast] Erreur 2
+
+
+Determining if the include file usb.h exists failed with the following output:
+Change Dir: /home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_533b6/fast"
+/usr/bin/make -f CMakeFiles/cmTC_533b6.dir/build.make CMakeFiles/cmTC_533b6.dir/build
+make[1] : on entre dans le répertoire « /home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp »
+Building C object CMakeFiles/cmTC_533b6.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -g -O3    -o CMakeFiles/cmTC_533b6.dir/CheckIncludeFile.c.o   -c /home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:17: fatal error: usb.h: Aucun fichier ou dossier de ce type
+compilation terminated.
+CMakeFiles/cmTC_533b6.dir/build.make:65 : la recette pour la cible « CMakeFiles/cmTC_533b6.dir/CheckIncludeFile.c.o » a échouée
+make[1]: *** [CMakeFiles/cmTC_533b6.dir/CheckIncludeFile.c.o] Erreur 1
+make[1] : on quitte le répertoire « /home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp »
+Makefile:126 : la recette pour la cible « cmTC_533b6/fast » a échouée
+make: *** [cmTC_533b6/fast] Erreur 2
+
+
+Determining if the include file libusb.h exists failed with the following output:
+Change Dir: /home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_3274b/fast"
+/usr/bin/make -f CMakeFiles/cmTC_3274b.dir/build.make CMakeFiles/cmTC_3274b.dir/build
+make[1] : on entre dans le répertoire « /home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp »
+Building C object CMakeFiles/cmTC_3274b.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -g -O3    -o CMakeFiles/cmTC_3274b.dir/CheckIncludeFile.c.o   -c /home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:20: fatal error: libusb.h: Aucun fichier ou dossier de ce type
+compilation terminated.
+CMakeFiles/cmTC_3274b.dir/build.make:65 : la recette pour la cible « CMakeFiles/cmTC_3274b.dir/CheckIncludeFile.c.o » a échouée
+make[1]: *** [CMakeFiles/cmTC_3274b.dir/CheckIncludeFile.c.o] Erreur 1
+make[1] : on quitte le répertoire « /home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp »
+Makefile:126 : la recette pour la cible « cmTC_3274b/fast » a échouée
+make: *** [cmTC_3274b/fast] Erreur 2
+
+
+Determining if the function hid_init exists in the usb failed with the following output:
+Change Dir: /home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_ad132/fast"
+/usr/bin/make -f CMakeFiles/cmTC_ad132.dir/build.make CMakeFiles/cmTC_ad132.dir/build
+make[1] : on entre dans le répertoire « /home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp »
+Building C object CMakeFiles/cmTC_ad132.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -g -O3 -DCHECK_FUNCTION_EXISTS=hid_init   -o CMakeFiles/cmTC_ad132.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+Linking C executable cmTC_ad132
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ad132.dir/link.txt --verbose=1
+/usr/bin/cc  -g -O3 -DCHECK_FUNCTION_EXISTS=hid_init    CMakeFiles/cmTC_ad132.dir/CheckFunctionExists.c.o  -o cmTC_ad132 -rdynamic -lusb 
+/usr/bin/ld : ne peut trouver -lusb
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_ad132.dir/build.make:97 : la recette pour la cible « cmTC_ad132 » a échouée
+make[1]: *** [cmTC_ad132] Erreur 1
+make[1] : on quitte le répertoire « /home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp »
+Makefile:126 : la recette pour la cible « cmTC_ad132/fast » a échouée
+make: *** [cmTC_ad132/fast] Erreur 2
+
+
+Performing C SOURCE FILE Test HAVE_USBHID failed with the following output:
+Change Dir: /home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_10a34/fast"
+/usr/bin/make -f CMakeFiles/cmTC_10a34.dir/build.make CMakeFiles/cmTC_10a34.dir/build
+make[1] : on entre dans le répertoire « /home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp »
+Building C object CMakeFiles/cmTC_10a34.dir/src.c.o
+/usr/bin/cc    -g -O3 -DHAVE_USBHID   -o CMakeFiles/cmTC_10a34.dir/src.c.o   -c /home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp/src.c
+/home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp/src.c:10:34: fatal error: dev/usb/usb.h: Aucun fichier ou dossier de ce type
+compilation terminated.
+CMakeFiles/cmTC_10a34.dir/build.make:65 : la recette pour la cible « CMakeFiles/cmTC_10a34.dir/src.c.o » a échouée
+make[1]: *** [CMakeFiles/cmTC_10a34.dir/src.c.o] Erreur 1
+make[1] : on quitte le répertoire « /home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp »
+Makefile:126 : la recette pour la cible « cmTC_10a34/fast » a échouée
+make: *** [cmTC_10a34/fast] Erreur 2
+
+Source file was:
+
+       #include <sys/types.h>
+        #if defined(HAVE_USB_H)
+        #include <usb.h>
+        #endif
+        #ifdef __DragonFly__
+        # include <bus/usb/usb.h>
+        # include <bus/usb/usbhid.h>
+        #else
+        # include <dev/usb/usb.h>
+        # include <dev/usb/usbhid.h>
+        #endif
+        #if defined(HAVE_USBHID_H)
+        #include <usbhid.h>
+        #elif defined(HAVE_LIBUSB_H)
+        #include <libusb.h>
+        #elif defined(HAVE_LIBUSBHID_H)
+        #include <libusbhid.h>
+        #endif
+        int main(int argc, char **argv) {
+          struct report_desc *repdesc;
+          struct usb_ctl_report *repbuf;
+          hid_kind_t hidkind;
+          return 0;
+        }
+Performing C SOURCE FILE Test HAVE_PTHREAD_NP_H failed with the following output:
+Change Dir: /home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_07d27/fast"
+/usr/bin/make -f CMakeFiles/cmTC_07d27.dir/build.make CMakeFiles/cmTC_07d27.dir/build
+make[1] : on entre dans le répertoire « /home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp »
+Building C object CMakeFiles/cmTC_07d27.dir/src.c.o
+/usr/bin/cc    -g -O3 -DHAVE_PTHREAD_NP_H -D_REENTRANT -pthread   -o CMakeFiles/cmTC_07d27.dir/src.c.o   -c /home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp/src.c
+/home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp/src.c:3:34: fatal error: pthread_np.h: Aucun fichier ou dossier de ce type
+compilation terminated.
+CMakeFiles/cmTC_07d27.dir/build.make:65 : la recette pour la cible « CMakeFiles/cmTC_07d27.dir/src.c.o » a échouée
+make[1]: *** [CMakeFiles/cmTC_07d27.dir/src.c.o] Erreur 1
+make[1] : on quitte le répertoire « /home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp »
+Makefile:126 : la recette pour la cible « cmTC_07d27/fast » a échouée
+make: *** [cmTC_07d27/fast] Erreur 2
+
+Source file was:
+
+          #include <pthread.h>
+          #include <pthread_np.h>
+          int main(int argc, char** argv) { return 0; }
+Determining if the function pthread_set_name_np exists failed with the following output:
+Change Dir: /home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_c82a7/fast"
+/usr/bin/make -f CMakeFiles/cmTC_c82a7.dir/build.make CMakeFiles/cmTC_c82a7.dir/build
+make[1] : on entre dans le répertoire « /home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp »
+Building C object CMakeFiles/cmTC_c82a7.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -g -O3 -DCHECK_FUNCTION_EXISTS=pthread_set_name_np -D_REENTRANT -pthread   -o CMakeFiles/cmTC_c82a7.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+Linking C executable cmTC_c82a7
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c82a7.dir/link.txt --verbose=1
+/usr/bin/cc  -g -O3 -DCHECK_FUNCTION_EXISTS=pthread_set_name_np -D_REENTRANT -pthread    CMakeFiles/cmTC_c82a7.dir/CheckFunctionExists.c.o  -o cmTC_c82a7 -rdynamic 
+CMakeFiles/cmTC_c82a7.dir/CheckFunctionExists.c.o : Dans la fonction « main » :
+/usr/share/cmake-3.5/Modules/CheckFunctionExists.c:14 : référence indéfinie vers « pthread_set_name_np »
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_c82a7.dir/build.make:97 : la recette pour la cible « cmTC_c82a7 » a échouée
+make[1]: *** [cmTC_c82a7] Erreur 1
+make[1] : on quitte le répertoire « /home/drake/Zappy/SDL/build/CMakeFiles/CMakeTmp »
+Makefile:126 : la recette pour la cible « cmTC_c82a7/fast » a échouée
+make: *** [cmTC_c82a7/fast] Erreur 2
+
+

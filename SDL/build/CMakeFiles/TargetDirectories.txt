@@ -1,0 +1,10 @@
+/home/drake/Zappy/SDL/build/CMakeFiles/install.dir
+/home/drake/Zappy/SDL/build/CMakeFiles/list_install_components.dir
+/home/drake/Zappy/SDL/build/CMakeFiles/rebuild_cache.dir
+/home/drake/Zappy/SDL/build/CMakeFiles/edit_cache.dir
+/home/drake/Zappy/SDL/build/CMakeFiles/SDL2main.dir
+/home/drake/Zappy/SDL/build/CMakeFiles/SDL2-static.dir
+/home/drake/Zappy/SDL/build/CMakeFiles/install/local.dir
+/home/drake/Zappy/SDL/build/CMakeFiles/install/strip.dir
+/home/drake/Zappy/SDL/build/CMakeFiles/SDL2.dir
+/home/drake/Zappy/SDL/build/CMakeFiles/uninstall.dir
